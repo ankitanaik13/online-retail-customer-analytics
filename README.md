@@ -27,6 +27,8 @@ The main objectives of this project are:
 
 ## Dataset
 This project uses the **Online Retail Dataset**, a UK-based non-store online retail transactional dataset.
+<<<<<<< HEAD
+=======
 https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
 
 ### Available Variables
