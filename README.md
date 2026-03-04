@@ -27,8 +27,7 @@ The main objectives of this project are:
 
 ## Dataset
 This project uses the **Online Retail Dataset**, a UK-based non-store online retail transactional dataset.
-
-**Source:** Add the Kaggle dataset link here
+https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
 
 ### Available Variables
 - **InvoiceNo** — unique invoice number; invoices starting with `C` indicate cancellation
