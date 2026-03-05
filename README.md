@@ -27,7 +27,8 @@ The main objectives of this project are:
 
 ## Dataset
 This project uses the **Online Retail Dataset**, a UK-based non-store online retail transactional dataset.
-https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
+
+**Source:** https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
 
 ### Available Variables
 - **InvoiceNo** — unique invoice number; invoices starting with `C` indicate cancellation
@@ -147,42 +148,53 @@ Customers with non-positive net value were flagged as fully returned customers.
 - Fully returned customers represented **0.44%** of the customer base
 
 ## Repository Structure
+```text
 retail/
 ├── online_retail_analysis.ipynb
 ├── README.md
 ├── .gitignore
-├── images/
-└── outputs/
-## Key Visualizations
-![RFM Segments](images/01_rfm_segments_customers_revenue.png)
-![Cohort Retention Heatmap](images/02_cohort_retention_heatmap.png)
-![Average Retention Curve](images/03_avg_retention_curve.png)
-![Weighted Retention + Coverage](images/04_weighted_retention_and_cohort_coverage.png)
-![Time to Second Purchase](images/05_time_to_second_purchase_hist.png)
-![Lift Chart](images/06_lift_chart_deciles.png)
-![Returns by Segment](images/07_returns_by_segment.png)
-This repository includes visualizations such as:
-	•	Customer count by segment
-	•	Revenue / value by segment
-	•	Cohort retention heatmap
-	•	Weighted retention curve
-	•	Cohort coverage curve
-	•	Returns behavior by segment
-	•	Time to second purchase histogram
-	•	Lift chart for model evaluation
+└── images/
+Key Visualizations
+1) RFM Segmentation (Customer Count + Revenue)
+
+2) Cohort Retention Heatmap
+
+3) Average Retention Curve (Unweighted)
+
+4) Weighted Retention + Cohort Coverage (Censoring-Aware)
+
+5) Time to Second Purchase
+
+6) Lift Chart (Model Targeting Quality)
+
+7) Returns Behavior by Segment
+
 Files
-	•	online_retail_analysis.ipynb — full notebook containing the complete analysis
-	•	images/ — exported screenshots of final charts
-	•	outputs/ — exported CSV files for analysis outputs
+
+online_retail_analysis.ipynb — full notebook containing the complete analysis
+
+images/ — screenshots of final charts
+
 Limitations
-	•	The dataset covers roughly one year, so long-term lifetime value estimation is limited
-	•	Missing CustomerID values reduce the number of transactions available for customer-level analysis
-	•	Later-month retention values are based on fewer cohorts due to the limited observation window
-	•	Logistic regression was used as an interpretable baseline; more advanced models may improve predictive performance
+
+The dataset covers roughly one year, so long-term lifetime value estimation is limited.
+
+Missing CustomerID reduces the number of transactions available for customer-level analysis.
+
+Later-month retention is computed from fewer cohorts due to the limited observation window (censoring).
+
+Logistic regression is an interpretable baseline; more advanced models may improve predictive performance.
+
 Future Improvements
-	•	Compare logistic regression with tree-based models such as Random Forest or XGBoost
-	•	Add calibration or probability-threshold tuning for targeting
-	•	Build an interactive dashboard in Power BI or Tableau
-	•	Package the workflow into reusable scripts/modules instead of only a notebook
+
+Compare logistic regression with tree-based models (Random Forest / XGBoost).
+
+Add probability calibration and threshold tuning for targeting.
+
+Build an interactive dashboard in Power BI or Tableau.
+
+Package the workflow into reusable scripts/modules instead of only a notebook.
+
 Author
+
 Ankita Prashant Naik
