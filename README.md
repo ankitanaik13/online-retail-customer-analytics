@@ -27,8 +27,6 @@ The main objectives of this project are:
 
 ## Dataset
 This project uses the **Online Retail Dataset**, a UK-based non-store online retail transactional dataset.
-<<<<<<< HEAD
-=======
 https://www.kaggle.com/datasets/ulrikthygepedersen/online-retail-dataset
 
 ### Available Variables
@@ -155,7 +153,14 @@ retail/
 ├── .gitignore
 ├── images/
 └── outputs/
-Key Visualizations
+## Key Visualizations
+![RFM Segments](images/01_rfm_segments_customers_revenue.png)
+![Cohort Retention Heatmap](images/02_cohort_retention_heatmap.png)
+![Average Retention Curve](images/03_avg_retention_curve.png)
+![Weighted Retention + Coverage](images/04_weighted_retention_and_cohort_coverage.png)
+![Time to Second Purchase](images/05_time_to_second_purchase_hist.png)
+![Lift Chart](images/06_lift_chart_deciles.png)
+![Returns by Segment](images/07_returns_by_segment.png)
 This repository includes visualizations such as:
 	•	Customer count by segment
 	•	Revenue / value by segment
