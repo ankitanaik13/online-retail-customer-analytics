@@ -154,3 +154,11 @@ retail/
 ├── README.md
 ├── .gitignore
 └── images/
+## Key Visualizations
+![RFM Segments](images/01_rfm_segments_customers_revenue.png)
+![Cohort Retention Heatmap](images/02_cohort_retention_heatmap.png)
+![Average Retention Curve](images/03_avg_retention_curve.png)
+![Weighted Retention + Coverage](images/04_weighted_retention_and_cohort_coverage.png)
+![Time to Second Purchase](images/05_time_to_second_purchase_hist.png)
+![Lift Chart](images/06_lift_chart_deciles.png)
+![Returns by Segment](images/07_returns_by_segment.png)
