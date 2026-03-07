@@ -149,16 +149,30 @@ Customers with non-positive net value were flagged as fully returned customers.
 
 ## Repository Structure
 ```text
-retail/
+online-retail-customer-analytics/
 ├── online_retail_analysis.ipynb
 ├── README.md
 ├── .gitignore
 └── images/
-## Key Visualizations
-![RFM Segments](images/01_rfm_segments_customers_revenue.png)
-![Cohort Retention Heatmap](images/02_cohort_retention_heatmap.png)
-![Average Retention Curve](images/03_avg_retention_curve.png)
-![Weighted Retention + Coverage](images/04_weighted_retention_and_cohort_coverage.png)
-![Time to Second Purchase](images/05_time_to_second_purchase_hist.png)
-![Lift Chart](images/06_lift_chart_deciles.png)
-![Returns by Segment](images/07_returns_by_segment.png)
+    ├── 01_rfm_segments_customers_revenue.png
+    ├── 02_cohort_retention_heatmap.png
+    ├── 03_avg_retention_curve.png
+    ├── 04_weighted_retention_and_cohort_coverage.png
+    ├── 05_time_to_second_purchase_hist.png
+    ├── 06_lift_chart_deciles.png
+    └── 07_returns_by_segment.png
+Key Visualizations
+1) RFM Segmentation (Customer Count + Revenue)
+<img src="images/01_rfm_segments_customers_revenue.png" width="900"/>
+2) Cohort Retention Heatmap (Monthly)
+<img src="images/02_cohort_retention_heatmap.png" width="900"/>
+3) Average Retention Curve (Unweighted)
+<img src="images/03_avg_retention_curve.png" width="900"/>
+4) Weighted Retention + Cohort Coverage (Censoring-aware)
+<img src="images/04_weighted_retention_and_cohort_coverage.png" width="900"/>
+5) Time to Second Purchase (Days)
+<img src="images/05_time_to_second_purchase_hist.png" width="900"/>
+6) Lift Chart (Model Targeting Quality)
+<img src="images/06_lift_chart_deciles.png" width="900"/>
+7) Returns Behavior by Segment
+<img src="images/07_returns_by_segment.png" width="900"/> ```
