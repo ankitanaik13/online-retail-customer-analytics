@@ -175,4 +175,4 @@ Key Visualizations
 6) Lift Chart (Model Targeting Quality)
 <img src="images/06_lift_chart_deciles.png" width="900"/>
 7) Returns Behavior by Segment
-<img src="images/07_returns_by_segment.png" width="900"/> ```
+<img src="images/07_returns_by_segment.png" width="900"/> 
