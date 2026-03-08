@@ -177,6 +177,7 @@ Key Visualizations
 <img src="images/06_lift_chart_deciles.png" width="900"/>
 7) Returns Behavior by Segment
 <img src="images/07_returns_by_segment.png" width="900"/> 
+
 ## Files
 - `online_retail_analysis.ipynb` — full notebook with the complete analysis
 - `images/` — screenshots of final charts used in this report
