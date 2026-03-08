@@ -177,3 +177,35 @@ Key Visualizations
 <img src="images/06_lift_chart_deciles.png" width="900"/>
 7) Returns Behavior by Segment
 <img src="images/07_returns_by_segment.png" width="900"/> 
+## Files
+- `online_retail_analysis.ipynb` — full notebook with the complete analysis
+- `images/` — screenshots of final charts used in this report
+- `.gitignore` — excludes cache/temp files and raw dataset file (dataset is linked via Kaggle)
+
+## How to Run
+1. Download the dataset from Kaggle (link above).
+2. Place the CSV in the same folder as the notebook (or update the file path in the notebook).
+3. Open `online_retail_analysis.ipynb` in Jupyter Notebook / Jupyter Lab.
+4. Run all cells top-to-bottom to reproduce results.
+
+## Key Results (Highlights)
+- Champions contributed ~69.20% of NetRevenue; Loyal Customers contributed ~13.74%.
+- Repeat purchase rate: ~65.6%; median time to second purchase: 50 days.
+- Re-purchase model (Logistic Regression) achieved ROC-AUC ≈ 0.692.
+- Identified 13 high-value, high-risk customers for win-back targeting.
+- Fully returned customers represented 0.44% of the customer base (NetRevenue correction).
+
+## Limitations
+- Dataset covers ~1 year, so long-term lifetime value estimation is limited.
+- Missing `CustomerID` reduces customer-level coverage.
+- Later-month retention is based on fewer cohorts due to the observation window (censoring).
+- Logistic regression is an interpretable baseline; more complex models may improve performance.
+
+## Future Improvements
+- Compare logistic regression with tree-based models (Random Forest / XGBoost).
+- Add probability calibration and threshold tuning for targeting.
+- Package the workflow into reusable scripts/modules instead of only a notebook.
+- Optional: build an interactive dashboard in Power BI/Tableau using exported tables.
+
+## Author
+Ankita Prashant Naik
