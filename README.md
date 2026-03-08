@@ -160,7 +160,8 @@ online-retail-customer-analytics/
     ├── 04_weighted_retention_and_cohort_coverage.png
     ├── 05_time_to_second_purchase_hist.png
     ├── 06_lift_chart_deciles.png
-    └── 07_returns_by_segment.png```
+    └── 07_returns_by_segment.png
+```
 Key Visualizations
 1) RFM Segmentation (Customer Count + Revenue)
 <img src="images/01_rfm_segments_customers_revenue.png" width="900"/>
